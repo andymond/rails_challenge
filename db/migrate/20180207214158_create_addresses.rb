@@ -4,10 +4,8 @@ class CreateAddresses < ActiveRecord::Migration[5.1]
       t.text :description
       t.string :street_address
       t.string :city
-      t.string :string
       t.string :state
-      t.string :zipcode
-      t.string :integer
+      t.integer :zipcode
     end
   end
 end
