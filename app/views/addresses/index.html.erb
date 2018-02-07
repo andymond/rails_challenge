@@ -1,0 +1,7 @@
+ <h1><%= @student.name %> Addresses</h1>
+
+ <% @student.addresses.each do |address| %>
+   <div class="index_address">
+     <%= address.description %>
+   </div>
+ <% end %>
