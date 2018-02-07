@@ -3,5 +3,6 @@
 <% @students.each do |student| %>
   <div class="index_student">
     <%= student.name %>
+    <%= link_to "Expel #{student.name}", student_path(student), method: :delete %>
   </div>
 <% end %>

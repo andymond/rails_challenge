@@ -6,7 +6,7 @@ describe "User can delete a student" do
     student_2 = Student.create(name: "Pedro")
 
     visit "/students"
-    click_on "#delete_#{student_1.name}"
+    click_on "Expel Peter"
 
     expect(current_path).to eq("/students")
     expect(page).to have_content(student_2.name)
