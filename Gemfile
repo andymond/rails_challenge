@@ -38,6 +38,7 @@ group :development, :test do
   gem 'pry'
   gem 'rspec-rails'
   gem 'database_cleaner'
+  gem 'capybara', '~> 2.13'
 end
 
 group :development do
