@@ -2,7 +2,7 @@ require "rails_helper"
 
 describe "User sees navigation links across site" do
   it "shows links for studen index & create" do
-    student = Student.create("Melvin")
+    student = Student.create(name: "Melvin")
     visit "/students"
 
     expect(page).to have_link("All Students")
@@ -18,7 +18,7 @@ describe "User sees navigation links across site" do
     expect(page).to have_link("All Students")
     expect(page).to have_link("Enroll Student")
 
-    visit "/students/#{student.id}/new"
+    visit "/students/new"
 
     expect(page).to have_link("All Students")
     expect(page).to have_link("Enroll Student")
