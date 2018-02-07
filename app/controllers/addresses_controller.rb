@@ -17,6 +17,10 @@ class AddressesController < ApplicationController
     redirect_to student_address_path(@student, @address)
   end
 
+  def show
+    @address = Address.find(params[:id])
+  end
+
   private
 
   def address_params
